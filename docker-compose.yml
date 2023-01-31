@@ -1,8 +1,6 @@
 version: '3.4'
 services:
-
-  # nginx
-  winbox:
+    restart: always
     shm_size: 512m
     image: deepsurvey/winbox-docker:latest
     ports:
