@@ -6,6 +6,6 @@ services:
     ports:
     - 6901:6901
     environment:
-    VNC_PW=password
+    - VNC_PW=password
     volumes:
     - winbox_wine:/home/kasm-user/.wine
