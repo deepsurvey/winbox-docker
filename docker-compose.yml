@@ -4,8 +4,8 @@ services:
     image: deepsurvey/winbox-docker:latest
     restart: always
     ports:
-    - 6901:6901
+      - 6901:6901
     environment:
-    - VNC_PW=password
+      - VNC_PW=password
     volumes:
-    - winbox_wine:/home/kasm-user/.wine
+      - winbox_wine:/home/kasm-user/.wine
