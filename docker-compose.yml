@@ -1,0 +1,13 @@
+version: '3.4'
+services:
+
+  # nginx
+  winbox:
+    shm_size: 512m
+    image: deepsurvey/winbox-docker:latest
+    ports:
+    - 6901:6901
+    environment:
+    VNC_PW=password
+    volumes:
+    - winbox_wine:/home/kasm-user/.wine
